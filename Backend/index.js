@@ -17,7 +17,6 @@ app.use((req, res, next) => {
 app.post('/message', (req, res) => {
 
     const data = req.body
-    console.log(data)
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -47,5 +46,5 @@ app.post('/message', (req, res) => {
 })
 
 app.listen(8080, () => {
-    console.log("listening on 8080")
+    console.log("listening on port")
 })
