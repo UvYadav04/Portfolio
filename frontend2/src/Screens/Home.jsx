@@ -64,7 +64,7 @@ export default function Home() {
                 <Projects />
                 <Contact />
                 <img src={abs} className='abs position-absolute top-0 w-100 d-sm-inline d-none' alt="" />
-                <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline' alt="" />
+                {/* <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline' alt="" /> */}
             </div>
 
             <div className={loading ? "loader position-absolute top-0 loader text-center" : "d-none"}>
