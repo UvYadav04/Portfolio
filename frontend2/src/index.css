@@ -7,6 +7,11 @@ body {
   scrollbar-width: none;
 }
 
+.loader {
+
+  height: fit-content;
+}
+
 @font-face {
   font-family: Cassandra;
   src: url(./fonts/CassandraPersonalUseRegular-3BjG.ttf);

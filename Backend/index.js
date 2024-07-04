@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 app.post('/message', (req, res) => {
     const data = req.body
-    console.log(data)
+    // console.log(data)
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -34,12 +34,12 @@ app.post('/message', (req, res) => {
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            res.json({ success: false, message: "Something went wrong" })
-            console.log(error);
+        if (info) {
+            res.json({ success: true })
+            // console.log(info)
         } else {
-            res.json({ success: true, message: "password sent on your registered email id" })
-            console.log('Email sent: ' + info.response);
+            res.json({ success: false, message: "Something went wrong" })
+            // console.log(error);
         }
     });
 

@@ -13,14 +13,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Contact() {
     const [data, setdata] = useState({ name: "", email: "", mobile: "", message: "" })
-
+    const [loading, setloading] = useState(false)
     const handlemessage = async () => {
-        console.log(data)
         if (data.message === "" || data.name === "" || data.email === "" || data.mobile === "") {
             alert("Fill the information properly")
             return
         }
-
+        setloading(true)
         const response = await fetch("https://portfoliobackend-0g9j.onrender.com/message", {
             method: "POST",
             headers: {
@@ -28,15 +27,15 @@ export default function Contact() {
             },
             body: JSON.stringify(data)
         })
-
-        const json = response.json();
-        if (!json.success) {
-            alert("something went wrong try again")
+        setloading(false)
+        const json = await response.json();
+        if (json.success) {
+            alert("Message sent successfully")
             setdata((pdata) => {
-                return { ...pdata, name: "", email: "", mobile: "", message: "" }
+                return { name: "", email: "", mobile: "", message: "" }
             })
         } else {
-            alert("Message sent successfully")
+            alert("something went wrong try again")
         }
     }
 
@@ -70,33 +69,42 @@ export default function Contact() {
 
     }, [])
     return (
-        <div className='conpage container-fluid p-0 '>
-            <div className="row conrow mb-3 justify-content-around px-sm-4 px-1 pt-sm-4 pt-2 pb-2 mx-md-5 mx-sm-3 mx-2" id='contact'>
-                <div className="col-md-5 col-sm-10 col-11 p-0 concol">
-                    <h1 className='text-black text-md-start text-center mt-md-4 mt-sm-1 mt-0 fs-sm-1 fs-2'>Have a project? Let's talk</h1>
+        <>
+            <div className='conpage container-fluid p-0'>
+                <div className="row conrow mb-3 justify-content-around position-relative px-sm-4 px-1 pt-sm-4 pt-2 pb-2 mx-md-5 mx-sm-3 mx-2" id='contact'>
+                    <div className="col-md-5 col-sm-10 col-11 p-0 concol">
+                        <h1 className='text-black text-md-start text-center mt-md-4 mt-sm-1 mt-0 fs-sm-1 fs-2'>Have a project? Let's talk</h1>
 
-                    <div className="conifo d-md-inline d-none ">
-                        <h6 className='text-start m-0'>Mob : +91 9813163920</h6>
-                        <h6 className='text-start m-0'>Email : dineshnirban01@gmail.com</h6>
+                        <div className="conifo d-md-inline d-none ">
+                            <h6 className='text-start m-0'>Mob : +91 9813163920</h6>
+                            <h6 className='text-start m-0'>Email : dineshnirban01@gmail.com</h6>
 
-                        <ul className='p-0 text-start'>
-                            <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-black opacity-50'><LinkedInIcon /></Link></li>
-                            <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-black opacity-50'><InstagramIcon /></Link></li>
-                            <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-black opacity-50'><XIcon /></Link></li>
-                            <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-black opacity-50'><RedditIcon /></Link></li>
-                            <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-black opacity-50'><GitHubIcon /></Link></li>
-                        </ul>
+                            <ul className='p-0 text-start'>
+                                <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-black opacity-50'><LinkedInIcon /></Link></li>
+                                <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-black opacity-50'><InstagramIcon /></Link></li>
+                                <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-black opacity-50'><XIcon /></Link></li>
+                                <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-black opacity-50'><RedditIcon /></Link></li>
+                                <li className='list-style-none d-inline me-3 ms-0'><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-black opacity-50'><GitHubIcon /></Link></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="contact col-lg-5 col-md-6 col-sm-10 col-11  p-0 d-flex justify-content-between flex-column">
+                        <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' value={data.name} onChange={(e) => handlechange(e)} />
+                        <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' value={data.mobile} onChange={(e) => handlechange(e)} />
+                        <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' value={data.email} onChange={(e) => handlechange(e)} />
+                        <textarea name="message" id="message" placeholder='message' cols={20} rows={5} className='px-1 w-100' value={data.message} onChange={(e) => handlechange(e)} ></textarea>
+                        <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' onClick={() => handlemessage()} >Send Message</button>
+                    </div>
+
+                    <div className={loading ? "col-12 d-flex justify-content-center align-items-center loader position-absolute top-0 h-100 opacity-50 w-100" : "d-none"} style={{ backgroundColor: "black " }} >
+                        <h3 className="text-center text-white w-100 fs-md-3 fs-5">
+                            please wait...
+                        </h3>
                     </div>
                 </div>
-
-                <div className="contact col-lg-5 col-md-6 col-sm-10 col-11  p-0 d-flex justify-content-between flex-column">
-                    <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' value={data.name} onChange={(e) => handlechange(e)} />
-                    <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' value={data.mobile} onChange={(e) => handlechange(e)} />
-                    <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' value={data.email} onChange={(e) => handlechange(e)} />
-                    <textarea name="message" id="message" placeholder='message' cols={20} rows={5} className='px-1 w-100' onChange={(e) => handlechange(e)} ></textarea>
-                    <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' value={data.message} onClick={() => handlemessage()} >Send Message</button>
-                </div>
             </div>
-        </div>
+
+        </>
     )
 }
