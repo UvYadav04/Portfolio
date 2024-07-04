@@ -32,6 +32,9 @@ export default function Contact() {
         const json = response.json();
         if (!json.success) {
             alert("something went wrong try again")
+            setdata((pdata) => {
+                return { ...pdata, name: "", email: "", mobile: "", message: "" }
+            })
         } else {
             alert("Message sent successfully")
         }
@@ -87,11 +90,11 @@ export default function Contact() {
                 </div>
 
                 <div className="contact col-lg-5 col-md-6 col-sm-10 col-11  p-0 d-flex justify-content-between flex-column">
-                    <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' onChange={(e) => handlechange(e)} />
-                    <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' onChange={(e) => handlechange(e)} />
-                    <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' onChange={(e) => handlechange(e)} />
+                    <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' value={data.name} onChange={(e) => handlechange(e)} />
+                    <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' value={data.mobile} onChange={(e) => handlechange(e)} />
+                    <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' value={data.email} onChange={(e) => handlechange(e)} />
                     <textarea name="message" id="message" placeholder='message' cols={20} rows={5} className='px-1 w-100' onChange={(e) => handlechange(e)} ></textarea>
-                    <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' onClick={() => handlemessage()} >Send Message</button>
+                    <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' value={data.message} onClick={() => handlemessage()} >Send Message</button>
                 </div>
             </div>
         </div>

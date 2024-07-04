@@ -47,9 +47,9 @@ export default function Projects() {
             <div className="row  crow m-0 p-0 d-lg-none d-flex justify-content-sm-around justify-content-center  align-items-center position-relative flex-sm-row flex-column-reverse" id='projects'>
 
                 <div className="col-sm-2 col-12 d-lg-none gap-sm-4 gap-0 mt-sm-0 mt-3  m-0 p-0 d-flex flex-sm-column flex-row align-items-center justify-content-sm-between justify-content-around ">
-                    <img src={stavya} className='' alt="" onClick={() => setindex(0)} />
+                    <img src={hodo} className='' alt="" onClick={() => setindex(0)} />
 
-                    <img src={hodo} className='' alt="" onClick={() => setindex(1)} />
+                    <img src={stavya} className='' alt="" onClick={() => setindex(1)} />
 
                     <img src={nutrifit} className='' alt="" onClick={() => setindex(2)} />
                 </div>
