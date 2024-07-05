@@ -34,7 +34,7 @@ export default function Projects() {
 
     const [index, setindex] = useState(0)
     return (
-        <div className='propage container-fluid  p-0 mt-md-5 mt-5 pt-lg-5 pt-md-5 pt-sm-3 pt-0 pb-lg-3 pb-5'>
+        <div className='propage container-fluid  p-0 mt-md-5 mt-5 pt-lg-5 pt-md-5 pt-sm-3 pt-0 pb-lg-3 pb-sm-5 pb-2 '>
             <div className="text-center py-3 mb--3 mb-0 text-white"><h1>RECENT PROJECTS</h1></div>
             <div className="row d-lg-flex d-none prow p-0 justify-content-around  position-relative " id='projects'>
 

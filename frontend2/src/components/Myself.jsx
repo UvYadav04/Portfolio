@@ -2,6 +2,7 @@ import React from 'react'
 import photo from '../photos/dev1.jpeg'
 import photo2 from '../photos/dev2.png'
 import book from '../photos/book.png'
+import resume from '../data/Resume2.pdf'
 
 export default function Myself() {
 
@@ -20,7 +21,7 @@ export default function Myself() {
                     <hr />
 
 
-                    <a href='https://pdf.ac/10uscJ' className=' px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 me-2 rounded-2 text-decoration-none buttons text-white'>Resume</a>
+                    <a href='/' onClick={() => window.open(resume)} className=' px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 me-2 rounded-2 text-decoration-none buttons text-white'>Resume</a>
                     <a href='#projects' className='px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 rounded-2 text-decoration-none buttons text-white'>Projects</a>
                 </div>
 

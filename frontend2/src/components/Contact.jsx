@@ -5,15 +5,18 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import RedditIcon from '@mui/icons-material/Reddit';
+import MailIcon from '@mui/icons-material/Mail';
+import CallIcon from '@mui/icons-material/Call';
 import { Link } from 'react-router-dom';
 
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+// import gsap from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// gsap.registerPlugin(ScrollTrigger)
 
 export default function Contact() {
     const [data, setdata] = useState({ name: "", email: "", mobile: "", message: "" })
     const [loading, setloading] = useState(false)
+    const [left, setleft] = useState(true)
     const handlemessage = async () => {
         if (data.message === "" || data.name === "" || data.email === "" || data.mobile === "") {
             alert("Fill the information properly")
@@ -46,35 +49,35 @@ export default function Contact() {
             return { ...pdata, [name]: value }
         })
     }
-    useEffect(() => {
-        gsap.fromTo('.concol',
-            {
-                x: -500,
-                opacity: 0,
-            },
-            {
-                scrollTrigger: {
-                    trigger: ".concol",
-                    toggleActions: "play none none none",
-                    start: "top 80%",
-                    // end: "bottom 60%",
-                    // markers: true
+    // useEffect(() => {
+    //     gsap.fromTo('.concol',
+    //         {
+    //             x: -500,
+    //             opacity: 0,
+    //         },
+    //         {
+    //             scrollTrigger: {
+    //                 trigger: ".concol",
+    //                 toggleActions: "play none none none",
+    //                 start: "top 80%",
+    //                 // end: "bottom 60%",
+    //                 // markers: true
 
-                },
-                x: 0,
-                opacity: 1,
-                duration: 1,
-            }
-        )
+    //             },
+    //             x: 0,
+    //             opacity: 1,
+    //             duration: 1,
+    //         }
+    //     )
 
-    }, [])
+    // }, [])
     return (
         <>
             <div className='conpage container-fluid p-0'>
-                <div className="row conrow mb-3 justify-content-around position-relative px-sm-4 px-1 pt-sm-4 pt-2 pb-2 mx-md-5 mx-sm-3 mx-2" id='contact'>
-                    <div className="col-md-5 col-sm-10 col-11 p-0 concol">
-                        <h1 className='text-black text-md-start text-center mt-md-4 mt-sm-1 mt-0 fs-sm-1 fs-2'>Have a project? Let's talk</h1>
-
+                <div className="row conrow mb-3 justify-content-around position-relative px-md-4 px-1 pt-md-4 pt-0 pb-2 mx-md-5 mx-sm-3 mx-2 " id='contact'>
+                    <div className="col-md-5 col-sm-10 col-11 p-0 concol d-md-inline d-none">
+                        <h1 className='text-black text-md-start text-center mt-md-4 mt-sm-1 mt-0 fs-sm-1 fs-2 d-sm-block d-none'>Have a project? Let's talk</h1>
+                        <h6 className='d-lg-inline d-none'>For inquiries about new or ongoing projects, please feel free to reach out. I'm available to discuss your ideas and assist with your development needs.</h6>
                         <div className="conifo d-md-inline d-none ">
                             <h6 className='text-start m-0'>Mob : +91 9813163920</h6>
                             <h6 className='text-start m-0'>Email : dineshnirban01@gmail.com</h6>
@@ -89,15 +92,46 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="contact col-lg-5 col-md-6 col-sm-10 col-11  p-0 d-flex justify-content-between flex-column">
+                    <div className="contact col-lg-5 col-md-6 col-sm-10 col-11  p-0 d-md-flex d-none justify-content-between flex-column">
                         <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' value={data.name} onChange={(e) => handlechange(e)} />
                         <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' value={data.mobile} onChange={(e) => handlechange(e)} />
                         <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' value={data.email} onChange={(e) => handlechange(e)} />
                         <textarea name="message" id="message" placeholder='message' cols={20} rows={5} className='px-1 w-100' value={data.message} onChange={(e) => handlechange(e)} ></textarea>
                         <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' onClick={() => handlemessage()} >Send Message</button>
                     </div>
+                    <div className={!left ? "contact2 col-11 pt-3 p-0 d-md-none d-flex justify-content-between flex-column slideshow" : "contact2 col-11 pt-3 p-0 d-md-none d-flex justify-content-between flex-column slidehide"}>
+                        <input type="text" name='name' placeholder='name' className=' mb-lg-3 mb-2 px-1 border-none' value={data.name} onChange={(e) => handlechange(e)} />
+                        <input type="number" name='mobile' placeholder='mobile' className=' mb-lg-3 mb-2 px-1 border-none w-100' value={data.mobile} onChange={(e) => handlechange(e)} />
+                        <input type="email" name='email' placeholder='email' className=' mb-lg-3 mb-2 px-1 border-none' value={data.email} onChange={(e) => handlechange(e)} />
+                        <textarea name="message" id="message" placeholder='message' cols={20} rows={5} className='px-1 w-100' value={data.message} onChange={(e) => handlechange(e)} ></textarea>
 
-                    <div className={loading ? "col-12 d-flex justify-content-center align-items-center loader position-absolute top-0 h-100 opacity-50 w-100" : "d-none"} style={{ backgroundColor: "black " }} >
+                        <div className="d-flex justify-content-between ">
+                            <button className='text-white bg bg-black px-2 rounded-1 mt-sm-3 mt-2' onClick={() => setleft(true)} >back</button>
+                            <button className='text-white bg bg-black ms-auto px-2 rounded-1 mt-sm-3 mt-2' onClick={() => handlemessage()} >Send Message</button>
+                        </div>
+                    </div>
+
+                    <div className={left ? "d-md-none showbuttons sliders px-2 pt-0 pb-0 bg bg-black" : "p-2 pt-4 pb-0 d-md-none hidebuttons sliders bg bg-black"} >
+                        <h3 className='py-1 m-0 mt-1 mb-2 w-100 text-center bg bg-white px-4  text-black'>Feel free to Contact</h3>
+                        <p className='mb-2 mt-2 px-1 d-sm-block d-none'>For inquiries about new or ongoing projects, please feel free to reach out. I'm available to discuss your ideas and assist with your development needs </p>
+                        <p className='mb-2 mt-2 px-1 d-sm-none'>An exciting project??, react me out. </p>
+                        <ul className='p-0 my-1 mt-sm-3 text-start text-white m-0 conlist d-flex justify-content-center gap-4 w-75   '>
+                            <li className='list-style-none  m-0 ms-0 p-0'><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-white '><LinkedInIcon className='p-1' sx={{ color: "black", backgroundColor: "white", fontSize: 25, borderRadius: "100%" }} /></Link></li>
+                            <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-white '><InstagramIcon className='p-1' sx={{ color: "black", backgroundColor: "white", fontSize: 25, borderRadius: "100%" }} /></Link></li>
+                            <li className='list-style-none  m-0 ms-0 ' ><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-white '><XIcon className='p-1' sx={{ color: "black", backgroundColor: "white", fontSize: 25, borderRadius: "100%" }} /></Link></li>
+                            <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-white '><RedditIcon className='p-1' sx={{ color: "black", backgroundColor: "white", fontSize: 25, borderRadius: "100%" }} /></Link></li>
+                            <li className='list-style-none  m-0 ms-0 '>
+                                <Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-white '><GitHubIcon className='p-1' sx={{ color: "black", backgroundColor: "white", fontSize: 25, borderRadius: "100%" }} /></Link></li>
+                        </ul>
+
+                        <ul className='mt-sm-3 mt-1 p-0 mb-1 d-flex flex-wrap justify-content-center'>
+                            <li className='me-2'><MailIcon className='mb-1' sx={{ fontSize: 20 }} />dineshnirban01@gmail.com</li>
+                            <li className='me-2'><CallIcon className='mb-1' sx={{ fontSize: 20 }} />+91 9813163920</li>
+                        </ul>
+                        <button className='ms-auto me-0 mt-sm-4 mt-2 mb-2' onClick={() => setleft(false)} >send message</button>
+                    </div>
+
+                    <div className={loading ? "col-12 d-flex justify-content-center align-items-center loader position-absolute top-0 h-100 opac clasity-50 w-100" : "d-none"} style={{ backgroundColor: "black " }} >
                         <h3 className="text-center text-white w-100 fs-md-3 fs-5">
                             please wait...
                         </h3>

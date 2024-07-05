@@ -13,6 +13,7 @@ import WavingHandIcon from '@mui/icons-material/WavingHand';
 import { Link } from 'react-router-dom';
 import bg from '../photos/r9.jpeg'
 
+
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
