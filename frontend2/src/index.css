@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, rgb(101, 101, 101), black);
+  /* background: linear-gradient(to bottom, rgb(101, 101, 101), black); */
 
 
   h1 {
