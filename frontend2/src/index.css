@@ -35,6 +35,9 @@ body {
 
   button {
     float: right;
+    background-color: rgb(0, 0, 0);
+    color: #0ef;
+    box-shadow: 2px 2px 5px 3px solid white;
   }
 
   ul li {
