@@ -112,7 +112,7 @@ export default function Contact() {
                     </div>
 
                     <div className={left ? "d-md-none showbuttons sliders px-2 pt-0 pb-0 bg bg-black" : "p-2 pt-4 pb-0 d-md-none hidebuttons sliders bg bg-black"} >
-                        <h3 className='py-1 m-0 mt-1 mb-2 w-100 text-center bg bg-white px-4  text-black'>Feel free to Contact</h3>
+                        <h3 className='py-1 m-0 mt-1 mb-sm-2  w-100 text-center bg bg-white px-4  text-black'>Feel free to Contact</h3>
                         <p className='mb-2 mt-2 px-1 d-sm-block d-none'>For inquiries about new or ongoing projects, please feel free to reach out. I'm available to discuss your ideas and assist with your development needs </p>
                         <p className='mb-2 mt-2 px-1 d-sm-none'>An exciting project??, react me out. </p>
                         <ul className='p-0 my-1 mt-sm-3 text-start text-white m-0 conlist d-flex justify-content-center gap-4 w-75   '>
@@ -128,7 +128,7 @@ export default function Contact() {
                             <li className='me-2'><MailIcon className='mb-1' sx={{ fontSize: 20 }} />dineshnirban01@gmail.com</li>
                             <li className='me-2'><CallIcon className='mb-1' sx={{ fontSize: 20 }} />+91 9813163920</li>
                         </ul>
-                        <button className='ms-auto me-0 mt-sm-4 mt-2 mb-2' onClick={() => setleft(false)} >send message</button>
+                        <button className='ms-auto me-0 mt-sm-4 mt-2 mb-sm-2 mb-0' onClick={() => setleft(false)} >send message</button>
                     </div>
 
                     <div className={loading ? "col-12 d-flex justify-content-center align-items-center loader position-absolute top-0 h-100 opac clasity-50 w-100" : "d-none"} style={{ backgroundColor: "black " }} >
