@@ -44,8 +44,8 @@ export default function Navbar() {
                         <li className='d-inline  mt-2 pb-2 list-style-none p-0 slide'>
                             <a href='#skills' className='fs-6 text-decoration-none text-white  m-0' >SKILLS</a>
                         </li>
-                        <li className='d-inline mt-2 pb-2 list-style-none p-0 d-md-inline d-none slide'>
-                            <a href='/' className='fs-6 text-decoration-none text-white  m-0' >EXPERIENCE</a>
+                        <li className='d-inline experience mt-2 pb-2 list-style-none p-0 d-md-inline d-none slide' style={{ cursor: "not-allowed" }}>
+                            <a href='/' className='fs-6 text-decoration-none text-white  m-0' style={{ cursor: "not-allowed" }}   >EXPERIENCE</a>
                         </li>
                         <li className='d-inline  list-style-none p-0 slide'>
                             <a href='#contact' className='py-md-2 py-1 px-md-4 px-2 fs-6 rounded-1 text-decoration-none contact text-white'>CONTACT</a>

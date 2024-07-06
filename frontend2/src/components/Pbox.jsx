@@ -27,7 +27,7 @@ export default function Pbox({ name, description, images, pending, link }) {
         <>
             <div className='col-lg-4 col-md-6 col-sm-8 col-11  p-xl-5 p-lg-4 p-0 text-white '>
                 <div className="p-0 m-0 w-100 innerone position-relative " onMouseEnter={() => handlehover()} onMouseLeave={() => handleout()} >
-                    <InfoIcon className='position-absolute infobutton d-sm-none d-block top-0 end-0' sx={{ color: "white", height: "30px", width: "30px" }} onClick={() => handleinfo()} />
+                    <InfoIcon className='position-absolute infobutton d-md-none d-block top-0 end-0' sx={{ color: "white", height: "30px", width: "30px" }} onClick={() => handleinfo()} />
                     <Carousel showThumbs={false} autoPlay={true} showStatus={false} interval={3000} transitionTime={2000} infiniteLoop={true} showIndicators={false} >
                         {images.map((item) => {
                             return (

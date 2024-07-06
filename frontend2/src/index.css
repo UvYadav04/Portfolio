@@ -227,6 +227,11 @@ img.abs {
     font-weight: 500;
   }
 
+  li.experience a {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
   img {
     width: 50px;
   }
