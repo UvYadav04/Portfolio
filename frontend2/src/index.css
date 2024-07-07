@@ -507,6 +507,11 @@ img.abs {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 238, 255));
       overflow-y: scroll;
       scrollbar-width: none;
+
+      a {
+        cursor: pointer;
+        z-index: 10;
+      }
     }
 
     .infobutton {

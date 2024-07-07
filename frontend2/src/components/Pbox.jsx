@@ -3,21 +3,22 @@ import { Link, Navigate } from 'react-router-dom'
 import LaunchIcon from '@mui/icons-material/Launch';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import InfoIcon from '@mui/icons-material/Info';
-export default function Pbox({ name, description, images, pending, link }) {
+export default function Pbox({ name, description, images, pending, link, git }) {
     const [classname, setclass] = useState("layer position-absolute pt-5")
     const handlehover = () => {
-        setclass("layer position-absolute top-0 w-100 h-100 layershow")
+        setclass("layer d-flex flex-column align-items-center justify-content-center position-absolute top-0 w-100 h-100 layershow")
     }
     const handleout = () => {
-        setclass("layer position-absolute top-0 w-100 h-100 layerhide")
+        setclass("layer d-flex flex-column align-items-center justify-content-start position-absolute top-0 w-100 h-100 layerhide")
     }
 
     const handleinfo = () => {
         if (classname === "layer position-absolute top-0 w-100 h-100 layershow")
-            setclass("layer position-absolute top-0 w-100 h-100 layerhide")
+            setclass("layer d-flex flex-column align-items-center justify-content-start position-absolute top-0 w-100 h-100 layerhide")
         else
-            setclass("layer position-absolute top-0 w-100 h-100 layershow")
+            setclass("layer d-flex flex-column align-items-center justify-content-start position-absolute top-0 w-100 h-100 layershow")
     }
 
     const getimage = (item) => {
@@ -39,8 +40,9 @@ export default function Pbox({ name, description, images, pending, link }) {
                         })}
                     </Carousel>
                     <div className={classname}>
-                        <h3 className='text-center mt-sm-3 mt-1 mb-sm-3 mb-0 p-0'>{name} <span className={pending ? "d-inline fs-4" : "d-none"}>(progress)</span> <Link onClick={() => Navigate({ link })}><LaunchIcon className={pending ? "d-none" : ' mb-2'} sx={{ fontSize: 30 }} /></Link> </h3>
-                        <p className='text-center mt-sm-2 mt-0 px-2 pt-0'>{description}</p>
+                        <h3 className='text-center mt-sm-3 mt-2 mb-0 p-0'>{name} <span className={pending ? "d-inline fs-4" : "d-none"}>(progress)</span> <Link onClick={() => Navigate({ link })}><LaunchIcon className={pending ? "d-none" : ' mb-2'} sx={{ fontSize: 30 }} /></Link> </h3>
+                        <p className='text-center mt-0 px-2 pt-0 mb-0'>{description}</p>
+                        <h6 className='mt-3 ms-auto me-3'>Full code at <Link to={`https://github.com/UvYadav04/${name}`}>github</Link></h6>
                     </div>
                 </div >
 

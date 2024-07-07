@@ -12,21 +12,26 @@ const data = [
         description: "Hodo is a Social community app where people posts their moments and get views from people , also it tells you if there is any more hodo user nearby to get connected.",
         images: ["hodo1", "hodo2", "hodo3"],
         pending: false,
-        link: "https://hodoofficial.onrender.com"
+        link: "https://hodoofficial.onrender.com",
+        git: "https://github.com/UvYadav04/Hodo"
+
     },
     {
         name: "STAVYA",
         description: "Stavya is a Cultural website of a fest named 'Stavya' which hosts many events including dance, drama, songs and various events are based on Indian traditions.",
         images: ["stavya1", "stavya2", "stavya3", "stavya4"],
         pending: false,
-        link: "https://officialstavya.onrender.com/"
+        link: "https://officialstavya.onrender.com/",
+        git: "https://github.com/UvYadav04/Stavya"
+
     },
     {
         name: "NUTRIFIT",
         description: "Nutrifit is basically a diet routine website, On this platform ,various diet plant, workout plans and home remedies for disease are available.",
         images: ["nutri1", "nutri2", "nutri3", "nutri4"],
-        pending: true,
-        link: "https://officialstavya.onrender.com/"
+        pending: false,
+        link: "https://nutrifit-2lm8.onrender.com",
+        git: "https://github.com/UvYadav04/Nutrifit"
     }
 ]
 
