@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-import photo from '../photos/dev1.jpeg'
-import proj from '../photos/proj2.jpg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)

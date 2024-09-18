@@ -1,6 +1,4 @@
 import React from 'react'
-import photo from '../photos/dev1.jpeg'
-import photo2 from '../photos/dev2.png'
 import book from '../photos/book.png'
 import resume from '../data/Resume2.pdf'
 
