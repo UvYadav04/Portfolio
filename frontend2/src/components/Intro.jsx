@@ -2,7 +2,6 @@ import React, { useEffect, useLayoutEffect, useState } from 'react'
 import rightimg from '../photos/r9.png'
 import { useRef } from 'react';
 import abs from '../photos/bg4.jpg'
-import photo from '../photos/dev1.jpeg'
 import photo2 from '../photos/myfoto6.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
