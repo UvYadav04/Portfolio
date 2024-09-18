@@ -1,5 +1,4 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
-import rightimg from '../photos/r9.png'
 import { useRef } from 'react';
 import abs from '../photos/bg4.jpg'
 import photo2 from '../photos/myfoto6.png'
