@@ -1,6 +1,6 @@
 import React from 'react'
 import book from '../photos/book.png'
-import resume from '../data/DineshYadavResume.pdf'
+import resume from '../data/DineshYadav.pdf'
 
 export default function Myself() {
 
