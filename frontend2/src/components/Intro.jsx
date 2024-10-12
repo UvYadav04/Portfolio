@@ -103,10 +103,10 @@ export default function Intro() {
 
                         <p className='mt-lg-4 mt-md-1 mt-0 p-0 d-md-block d-none slide1'>"Specializing in MongoDB, Express.js, React, and Node.js, proficient in crafting scalable data solutions, efficient backends, and dynamic interfaces. <span className="d-xl-inline d-none"> Leveraging Node.js for optimized performance, Bootstrap for responsive design, and animations for e    nhanced user engagement.</span>
                         </p>
-                        <Link to={'#projects'}>
-                            <button className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none '>Projects</button>
-                        </Link>
-                        <button className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none '>Contact</button>
+
+                        <a href='#projects' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Projects</a>
+                        <a href='#contact' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Contact</a>
+
 
 
                     </div>
