@@ -8,7 +8,7 @@ import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import RedditIcon from '@mui/icons-material/Reddit';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 import bg from '../photos/r9.jpeg'
 
 
@@ -103,7 +103,9 @@ export default function Intro() {
 
                         <p className='mt-lg-4 mt-md-1 mt-0 p-0 d-md-block d-none slide1'>"Specializing in MongoDB, Express.js, React, and Node.js, proficient in crafting scalable data solutions, efficient backends, and dynamic interfaces. <span className="d-xl-inline d-none"> Leveraging Node.js for optimized performance, Bootstrap for responsive design, and animations for e    nhanced user engagement.</span>
                         </p>
-                        <button className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none '>Projects</button>
+                        <Link to={'#projects'}>
+                            <button className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none '>Projects</button>
+                        </Link>
                         <button className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none '>Contact</button>
 
 
