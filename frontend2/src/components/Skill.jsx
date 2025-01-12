@@ -5,60 +5,66 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 const data = [
     {
-        name: "html",
+        name: "Next.js",
         background: "orangered",
-        height: 90
+        height: 80
     },
     {
-        name: "CSS",
-        background: "blue",
+        name: "React",
+        background: "orange",
+        height: 95
+    },
+    {
+        name: "Redux",
+        background: "orange",
         height: 85
     },
     {
         name: "javascript",
         background: "orange",
-        height: 80
+        height: 90
+    },
+    {
+        name: "typescript",
+        background: "orange",
+        height: 85
     },
     {
         name: "nodeJS",
         background: "green",
-        height: 70
+        height: 85
     },
     {
         name: "expressJS",
         background: "white",
-        height: 80
+        height: 90
     },
     {
-        name: "python",
+        name: "MongoDB",
         background: "yellow",
-        height: 70
+        height: 90
     },
     {
-        name: "mongodb",
+        name: "PostgreSql",
         background: "green",
         height: 75
     },
     {
-        name: "reactJS",
-        background: "skyblue",
-        height: 80
-    },
-    {
-        name: "bootstrap",
-        background: "purple",
-        height: 80
-    },
-    {
-        name: "tailwind",
-        background: "purple",
-        height: 60
-    },
-    {
-        name: "API",
+        name: "Tailwind",
         background: "purple",
         height: 85
+    },
+    {
+        name: "Git/Github",
+        background: "purple",
+        height: 80
+    },
+    {
+        name: "REST Api",
+        background: "purple",
+        height: 90
     }
+
 ]
 
 
@@ -91,7 +97,7 @@ export default function Skill() {
                 {
                     data.map((item) => {
                         return <div className="col-md-4 col-12 plots d-flex flex-column align-items-center px-0 " style={{ "height": "100%" }}>
-                            <h6 className='text-white mb-1 text-start  d-block'>{item.name} <span className="">{item.height}%</span></h6>
+                            <h6 className='text-white mb-1 text-start  d-block'>{item.name} </h6>
                             <div className="outer mb-md-4 mb-2   h-100  p-0  overflow-hidden  position-relative ">
                                 {/* <img src={getimage(item.name)} className='w-75 mx-auto  mb-2' alt="" /> */}
                                 <div className=' graph' style={{ "width": `${item.height}%` }}></div>
