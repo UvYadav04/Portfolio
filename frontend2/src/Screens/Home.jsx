@@ -16,6 +16,7 @@ import abs2 from '../photos/r7.jpeg'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import ProjectsCard from '../components/Carddesign/Projects'
 gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
     const [loading, setloading] = useState(true)
@@ -61,7 +62,8 @@ export default function Home() {
                 <Intro />
                 <Myself />
                 <Skill />
-                <Projects />
+                {/* <Projects /> */}
+                <ProjectsCard />
                 <Contact />
                 <img src={abs} className='abs position-absolute top-0 w-100 d-sm-inline d-none' alt="" />
                 <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline' alt="" />
