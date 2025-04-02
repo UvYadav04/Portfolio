@@ -1,26 +1,17 @@
 module.exports =
     [
         {
-            "name": "CloudZee",
-            "description1": "A cloud file storage system that allows users to upload, manage, and access their files seamlessly from any device.",
-            "description2": "It ensures secure storage, fast retrieval, and easy sharing with a user-friendly interface.",
-            "techstack": "Next.js | Micro-services | Node.js | PostgreSQL",
-            "link": "https://hodoofficial.onrender.com",
-            "git": "https://github.com/UvYadav04/Hodo",
+            "name": "Rapid Hospitals",
+            "description1": "Worked as Next.js developer for a client and developed a platform where user can search nearby hospitals and calculate expenses online rather than going hospitals.",
+            "description2": "It allows users to filter hospitals by price and location.",
+            "techstack": "Next.js | ShadCN | Typescript",
+            "link": "https://rapidh.vercel.app",
+            "git": "https://github.com/UvYadav04/Rapidh_Frontend",
+            "demo": "https://drive.google.com/file/d/10pkliG__HzybgrsPhE-PCVBq3J0S368F/view?usp=sharing",
             "position1": "15% 25%",
             "position2": "75% 70%"
         },
-        {
-            "name": "InstantSS",
-            "description1": "A browser extension that enables users to capture screenshots instantly and save them as PDFs.",
-            "description2": "It offers an efficient way to organize and store screenshots without external tools.",
-            "techstack": "HTML | CSS | Javascript | Index DB",
-            "link": "https://hodoofficial.onrender.com",
-            "git": "https://github.com/UvYadav04/Hodo",
-            "demo": "https://drive.google.com/file/d/1SiHYIk5hTJHeZWRqY2icsiZqFm1X5-iX/view?usp=sharing",
-            "position1": "20% 35%",
-            "position2": "80% 20%"
-        },
+
         {
             "name": "Hodo",
             "description1": "A social community platform where users can share their moments, connect with people nearby, and engage in real-time conversations.",
@@ -42,6 +33,17 @@ module.exports =
             "demo": "https://drive.google.com/file/d/1bPjT0GOnbBj6LoQA_Wb6D14VvZr2LvzP/view?usp=sharing",
             "position1": "50% 40%",
             "position2": "90% 90%"
+        },
+        {
+            "name": "InstantSS",
+            "description1": "A browser extension that enables users to capture screenshots instantly and save them as PDFs.",
+            "description2": "It offers an efficient way to organize and store screenshots without external tools.",
+            "techstack": "HTML | CSS | Javascript | Index DB",
+            "link": "https://hodoofficial.onrender.com",
+            "git": "https://github.com/UvYadav04/Hodo",
+            "demo": "https://drive.google.com/file/d/1SiHYIk5hTJHeZWRqY2icsiZqFm1X5-iX/view?usp=sharing",
+            "position1": "20% 35%",
+            "position2": "80% 20%"
         },
         {
             "name": "Nutrifit",

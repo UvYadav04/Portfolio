@@ -19,6 +19,7 @@ const Card = ({ code, name, image, text, techstack, link, git, demo, setdemo, de
             <div className="content">
                 <p className="name"><Link to={link} className="link">{name}</Link></p>
                 <p className="link">
+                    {link ? <Link to={link} className="link"><i>Live</i></Link> : null}
                     <Link to={git} className="link"><i>github</i></Link>
                     {demo ? <Link onClick={() => setdemo(getVideo(name))} className="link"><i>demo</i></Link> : null}
                 </p>
