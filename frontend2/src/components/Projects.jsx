@@ -22,7 +22,7 @@ const data = [
         description: "Stavya is a Cultural website of a fest named 'Stavya' which hosts many events including dance, drama, songs and various events are based on Indian traditions.",
         images: ["stavya1", "stavya2", "stavya3", "stavya4"],
         pending: false,
-        link: "https://officialstavya.onrender.com/",
+        link: "https://stavya-mk79.onrender.com/",
         git: "https://github.com/UvYadav04/Stavya"
 
     },
