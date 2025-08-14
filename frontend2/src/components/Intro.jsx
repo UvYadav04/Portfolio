@@ -31,8 +31,6 @@ export default function Intro() {
                     toggleActions: "play none none none",
                     scroller: "body",
                     start: "top 20%",
-                    // end: "bottom 60%",
-                    // markers: true
 
                 },
                 x: "0",
@@ -84,28 +82,29 @@ export default function Intro() {
 
     return (
         <>
-            <div className="intro  container-fluid py-lg-5 py-sm-3 py-0 px-sm-3 px-0 position-relative mx-auto mt-xl-3 mt-lg-4 mt-sm-5 mt-0 mb-sm-5 mb-0">
+            <div className="intro  container-fluid py-lg-5 py-sm-3 py-0 px-sm-3 px-0 position-relative mx-auto mt-xl-3 mt-lg-2 mt-sm-2 mt-0 mb-sm-5 mb-0 z-2">
                 <div className="row p-0 m-0 w-100  align-items-sm-center align-items-end  flex-sm-row flex-row-reverse justify-content-sm-between justify-content-around ">
-                    <div className="about col-lg-6 col-sm-6 col-8 m-0 ">
-                        <h3 className='slide1 my-0 fs-lg-3 fs-4 d-lg-block d-none'>Hello , I'm</h3>
-                        <h1 className='slide1 m-0 p-0 mb-sm-0 mb-0 ms-sm-0 ms-1 mt-sm-0 mt-4' > Dinesh Yadav</h1>
-                        <h3 className='slide1 fs-lg-3 fs-sm-5 fs-6 d-sm-block d-none'>Full stack web developer</h3>
-                        <h4 className='slide1 fs-lg-4 fs-sm-5 fs-6 d-sm-none d-block  ps-1 m-0'>MERN stack developer</h4>
+                    <div className=" col-lg-6 col-sm-6 col-8 m-0 pe-0  lg:p-10 md:p-6 ">
+                        <h3 className='slide1 my-0 fs-lg-3 fs-4 '>Hello , I'm</h3>
+                        <h1 className='slide1 mb-lg-4 mt-lg-4  mb-md-3 mt-md-3 mb-sm-2  mt-sm-2 text-sm' > Dinesh Yadav</h1>
+                        <h4 className='slide1 fs-lg-4 fs-sm-5 fs-6 d-sm-none d-block  ps-1 m-0'>Full stack Software Developer</h4>
 
-                        <ul className='p-0 text-start text-white m-0 conlist'>
+
+                        <p className="d-md-none  d-sm-block d-none aboutsm mt-md-3 mt-1 text-sm" style={{ lineHeight: "16px" }}>```Full stack software developer proficient in React, Node.js, Express, MongoDB, creating efficient web solutions.```</p>
+                        <p className='mt-lg-2 mt-md-1 mt-0 p-0 d-md-block d-none slide1' style={{ lineHeight: "19px" }}>
+                            ```Full-Stack Software Developer skilled in building robust web applications using MongoDB, Express.js, React, and Node.js, with a strong focus on scalable backends, dynamic frontends, and clean architecture. <span className='d-xl-inline d-none'> Experienced in designing efficient algorithms, optimizing data structures, and implementing complex features, while leveraging modern frameworks and responsive design principles for seamless</span>```
+                        </p>
+                        <ul className='p-0 text-start text-white m-0 conlist '>
                             <li className='list-style-none  m-0 ms-0 p-0'><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-white '><LinkedInIcon className='p-1' sx={{ fontSize: 32, }} /></Link></li>
                             <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-white '><InstagramIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
                             <li className='list-style-none  m-0 ms-0 ' ><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-white '><XIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
                             <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-white '><RedditIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
                             <li className='list-style-none  m-0 ms-0 '><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-white '><GitHubIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
                         </ul>
-                        <p className="d-md-none d-sm-block d-none aboutsm mt-md-3 mt-1  " >MERN stack developer proficient in React, Node.js, Express, MongoDB, creating efficient web solutions.</p>
-
-                        <p className='mt-lg-4 mt-md-1 mt-0 p-0 d-md-block d-none slide1'>"Specializing in MongoDB, Express.js, React, and Node.js, proficient in crafting scalable data solutions, efficient backends, and dynamic interfaces. <span className="d-xl-inline d-none"> Leveraging Node.js for optimized performance, Bootstrap for responsive design, and animations for e    nhanced user engagement.</span>
-                        </p>
-
-                        <a href='#projects' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Projects</a>
-                        <a href='#contact' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Contact</a>
+                        <div className="buttoonnss flex flex-row gap-2 mt-2 place-content-start place-items-center">
+                            <a href='#projects' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Projects</a>
+                            <a href='#contact' style={{ textDecoration: "none" }} className='px-sm-3 px-2 fs-lg-5 fs-6 me-2 rounded-1 py-sm-1 py-0 d-md-inline d-none bg-white text-black '>Contact</a>
+                        </div>
 
 
 
@@ -115,16 +114,6 @@ export default function Intro() {
                         <img src={photo2} className='w-100 imgu bg bg-white m-0 p-0' alt="" />
                     </div>
                 </div>
-
-                {/* <div className="sidebar position-absolute d-md-inline d-none">
-                    <ul className='p-0 text-start text-white me-2'>
-                        <li className='list-style-none w-auto mb-3 ms-0 '><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-white '><LinkedInIcon sx={{ fontSize: 35 }} /></Link></li>
-                        <li className='list-style-none  mb-3 ms-0 '><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-white '><InstagramIcon sx={{ fontSize: 35 }} /></Link></li>
-                        <li className='list-style-none  mb-3 ms-0 ' ><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-white '><XIcon sx={{ fontSize: 35 }} /></Link></li>
-                        <li className='list-style-none  mb-3 ms-0 '><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-white '><RedditIcon sx={{ fontSize: 35 }} /></Link></li>
-                        <li className='list-style-none  mb-3 ms-0 '><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-white '><GitHubIcon sx={{ fontSize: 35 }} /></Link></li>
-                    </ul>
-                </div> */}
 
 
             </div >

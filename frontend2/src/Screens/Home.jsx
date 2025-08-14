@@ -3,20 +3,20 @@ import Navbar from '../components/Navbar'
 import Intro from '../components/Intro'
 import Myself from '../components/Myself'
 import Skill from '../components/Skill'
-import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import RedditIcon from '@mui/icons-material/Reddit';
-import abs from '../photos/bg4.jpg'
+import abs from '../photos/bg4-2.png'
 import abs2 from '../photos/r7.jpeg'
 
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ProjectsCard from '../components/Carddesign/Projects'
+import Experience from '../components/Experience/Experience'
 gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
     const [loading, setloading] = useState(true)
@@ -29,11 +29,6 @@ export default function Home() {
             setloading(false);
         }, 3800);
     }, []);
-
-    // useEffect(() => {
-    //     if (window.innerWidth === 768)
-    //         console.log(window.innerWidth)
-    // }, window.innerWidth)
 
     gsap.fromTo('.abs',
         {
@@ -61,12 +56,12 @@ export default function Home() {
                 <Navbar />
                 <Intro />
                 <Myself />
+                <Experience />
                 <Skill />
-                {/* <Projects /> */}
                 <ProjectsCard />
                 <Contact />
-                <img src={abs} className='abs position-absolute top-0 w-100 d-sm-inline d-none' alt="" />
-                <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline' alt="" />
+                <img src={abs} className='abs position-absolute md:-top-0 -top-14 w-100 d-sm-inline d-none  ' alt="" />
+                <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline opacity-20 ' alt="" />
             </div>
 
             <div className={loading ? "loader position-absolute top-0 loader text-center" : "d-none"}>
@@ -86,16 +81,6 @@ export default function Home() {
 
             </div >
 
-            {/* <div className={!loading ? "sidebar position-absolute d-md-inline d-none top-0 px-1 pt-3    start-0" : "d-none"}>
-                <ul className='p-0 text-start text-white'>
-                    <li className='list-style-none w-auto mb-3 ms-0 '><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-white '><LinkedInIcon sx={{ fontSize: "35" }} /></Link></li>
-                    <li className='list-style-none  mb-3 ms-0 '><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-white '><InstagramIcon sx={{ fontSize: 35 }} /></Link></li>
-                    <li className='list-style-none  mb-3 ms-0 ' ><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-white '><XIcon sx={{ fontSize: 35 }} /></Link></li>
-                    <li className='list-style-none  mb-3 ms-0 '><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-white '><RedditIcon sx={{ fontSize: 35 }} /></Link></li>
-                    <li className='list-style-none  ms-0 '><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-white '><GitHubIcon sx={{ fontSize: 35 }} /></Link></li>
-                </ul>
-            </div> */}
         </div>
     )
 }
-// 

@@ -128,7 +128,7 @@ export default function Contact() {
                             <li className='me-2'><MailIcon className='mb-1' sx={{ fontSize: 20 }} />dineshnirban01@gmail.com</li>
                             <li className='me-2'><CallIcon className='mb-1' sx={{ fontSize: 20 }} />+91 9813163920</li>
                         </ul>
-                        <button className='ms-auto me-0 mt-sm-4 mt-2 mb-0' onClick={() => setleft(false)} >send message</button>
+                        <button className='ms-auto me-0 mt-sm-4 mt-2 mb-0 p-1' style={{ boxShadow: "0 0 5px #0ef" }} onClick={() => setleft(false)} >send message</button>
                     </div>
 
                     <div className={loading ? "col-12 d-flex justify-content-center align-items-center loader position-absolute top-0 h-100 opac clasity-50 w-100" : "d-none"} style={{ backgroundColor: "black " }} >

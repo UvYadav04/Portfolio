@@ -5,22 +5,48 @@ import resume from '../data/MyResume.pdf'
 export default function Myself() {
 
     return (
-        <div className='mypage container-fluid p-0 py-2 position-relative w-100 '>
-            <div className="myrow row w-100 mx-auto justify-content-around align-items-center px-4" id='about'>
+        <div className='mypage container-fluid p-0 py-2 position-relative bg-transparent px-sm-0 px-3'>
+            <div className="myrow row w-100 mx-auto justify-content-between align-items-center " id='about'>
 
-                <div className="col-3 p-0 d-lg-inline d-none">
+                <div className="col-xl-3 col-3 p-0 d-lg-inline d-none mx-auto">
                     <img src={book} className='w-100 ' alt="" />
                 </div>
 
-                <div className="col-lg-6 col-12  left text-white opacity-75 px-md-4 px-sm-2 px-0 ">
-                    <h2 className='m-0 fs-sm-2 fs-3'>About me</h2>
-                    <p className=''>Hey there! I'm a MERN stack developer, proficient in MongoDB, Express.js, React, and Node.js. Specializing in end-to-end web development,<span className="d-xl-inline d-lg-none d-sm-inline d-none"> I excel in building robust and scalable applications that leverage the power of JavaScript across the stack.</span> <span className="d-xl-inline d-none">From crafting interactive user interfaces with React to designing efficient server-side architectures with Node.js.</span ><span className="vusu">Adept at integrating APIs and optimizing performance for seamless user experiences in full-stack development.</span> </p>
+                <div className="col-xxl-7 col-xl-8 col-lg-8 col-12  left text-white opacity-75  px-0 flex flex-col place-content-start place-items-start ">
+                    <h2 className='m-0 fs-sm-2 fs-2'>About me</h2>
+                    {/* XL screens */}
+                    <p className="d-none d-xxl-block text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
+                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with deep expertise in MongoDB, Express.js, React, and Node.js. I build scalable, high-performance applications by leveraging my strong understanding of algorithms and data structures, ensuring efficient and optimized solutions across the stack. I have solid system design knowledge, enabling me to create robust architectures and end-to-end solutions for complex projects. My work emphasizes clean, maintainable code, seamless API integrations, and applying modern design patterns to deliver reliable and user-friendly applications. I enjoy tackling challenging problems, improving performance, and ensuring applications are both secure and highly available, making a measurable impact for
+
+                    </p>
+                    <p className="d-xxl-none d-none d-xl-block text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
+                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with deep expertise in MongoDB, Express.js, React, and Node.js. I build scalable, high-performance applications by leveraging my strong understanding of algorithms and data structures, ensuring efficient and optimized solutions across the stack. I have solid system design knowledge, enabling me to create robust architectures and end-to-end solutions for complex projects.
+                        My work emphasizes clean, maintainable code, seamless
+                    </p>
+
+                    <p className="d-none d-lg-block d-xl-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
+                        Hi! I'm a MERN full-stack developer with strong expertise in MongoDB, Express.js, React, and Node.js. I build scalable applications by applying solid knowledge of data structures, algorithms, and system design principles. I focus on creating reliable backends, clean frontend interfaces, and seamless API integrations. My approach emphasizes maintainable code, efficient performance,
+                    </p>
+                    <p className="d-md-block d-lg-none d-none text-base break-all text-slate-400" style={{ lineHeight: "20px" }}>
+                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with extensive experience in MongoDB, Express.js, React, and Node.js. I design and implement scalable, high-performance applications, leveraging my deep understanding of algorithms and data structures to optimize efficiency across the entire stack. My expertise in system design allows me to create robust architectures and end-to-end solutions tailored for real-world projects. I excel at API integration, clean and maintainable coding practices, and applying modern design patterns to ensure reliability, maintainability, and optimal user experiences. I am passionate about building impactful software, continuously learning new technologies, and delivering solutions that scale seamlessly.
+                    </p>
+
+                    <p className="d-none d-sm-block d-md-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
+                        I'm a full-stack MERN developer with solid skills in MongoDB, Express.js, React, and Node.js. I build scalable and efficient applications, using my knowledge of data structures, algorithms, and system design to create robust and maintainable solutions. I focus on clean code, API integration, and applying modern design patterns to deliver reliable projects. Passionate about learning new technologies and solving real-world problems with full-stack development.
+                    </p>
+                    <p className="d-sm-none d-lg-none d-xl-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
+                        Skilled full-stack MERN developer with experience in MongoDB, Express.js, React, and Node.js. I build efficient and maintainable applications, leveraging DSA knowledge and system design principles. Focused on clean code, API integration, and practical solutions for real-world problems in full-stack development.
+                    </p>
+
+
 
                     <hr />
 
 
-                    <a href='/' onClick={() => window.open(resume)} className=' px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 me-2 rounded-2 text-decoration-none buttons text-white'>Resume</a>
-                    <a href='#projects' className='px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 rounded-2 text-decoration-none buttons text-white'>Projects</a>
+                    <div className="navbutons flex gap-1 mt-2">
+                        <a href='/' onClick={() => window.open(resume)} className=' px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 me-2 rounded-2 text-decoration-none buttons text-white'>Resume</a>
+                        <a href='#projects' className='px-sm-3 px-2 py-sm-1 py-1 fs-sm-4 fs-6 rounded-2 text-decoration-none buttons text-white'>Projects</a>
+                    </div>
                 </div>
 
 

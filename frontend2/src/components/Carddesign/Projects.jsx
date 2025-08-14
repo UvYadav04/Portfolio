@@ -14,7 +14,7 @@ const Card = ({ code, name, image, text, techstack, link, git, demo, setdemo, de
     return (
         <div className={`${code >= 2 && hide ? "tumor" : "show"} card`}>
             <div className="imgBx" data-text={text}>
-                <img src={getImage(image)} alt={text} />
+                <img className="" src={getImage(image)} alt={text} />
             </div>
             <div className="content">
                 <p className="name"><Link to={link} className="link">{name}</Link></p>
@@ -37,7 +37,7 @@ const ProjectsCard = () => {
     const [demovideo, setdemo] = useState(null)
     return (
         <div className="container2 p-0">
-            <h1>Tech Projects</h1>
+            <h1 className="text-2xl underline">Tech Projects</h1>
             {Projects.map((card, index) => (
                 <Card
                     key={index}

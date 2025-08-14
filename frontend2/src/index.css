@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   padding: 0;
@@ -26,7 +30,6 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px #0ef;
-  /* background: linear-gradient(to bottom, rgb(101, 101, 101), black); */
 
 
   h1 {
@@ -131,6 +134,10 @@ h1.logo {
     min-height: fit-content;
     /* background-color: red; */
   }
+}
+
+.about-para {
+  font-size: clamp();
 }
 
 .homepage {
@@ -694,8 +701,8 @@ img.abs {
   .intro {
 
     h1:nth-of-type(1) {
-      font-size: 1.5rem;
-      font-family: Cassandra;
+      font-size: 2rem;
+      /* font-family: Cassandra; */
     }
 
     img.mine {
@@ -709,6 +716,8 @@ img.abs {
 
   .aboutsm {
     font-size: 0.9rem;
+    color: white;
+    opacity: 0.6;
   }
 
   .slide1 {
@@ -716,32 +725,7 @@ img.abs {
   }
 }
 
-@media (max-width: 610px) {
-  .intro {
-
-    h1:nth-of-type(1) {
-      font-size: 1.5rem;
-      color: orange;
-    }
-
-    h3 {
-      display: none !important;
-    }
-
-    p.second {
-      display: none !important;
-    }
-
-    p.third {
-      display: block !important;
-      line-height: 30px;
-    }
-  }
-
-  .slide1 {
-    font-size: 0.8rem;
-  }
-}
+@media (max-width: 610px) {}
 
 @media (max-width: 575.5px) {
 
@@ -761,11 +745,38 @@ img.abs {
 
     }
 
+    h1:nth-of-type(1) {
+      font-size: 1.5rem;
+      color: orange;
+    }
+
+    h3 {
+      display: none !important;
+    }
+
+    p.second {
+      display: none !important;
+    }
+
+    p.third {
+      display: block !important;
+      line-height: 30px;
+    }
+
+
+    .slide1 {
+      font-size: 0.8rem;
+    }
+
     .about {
       padding: 0;
     }
   }
 
+
+  .mypage {
+    width: 100%;
+  }
 
   .myrow {
     width: 95%;
@@ -782,7 +793,7 @@ img.abs {
   }
 
   .skillpage {
-    width: 95%;
+    width: 93%;
   }
 
   .skillrow {

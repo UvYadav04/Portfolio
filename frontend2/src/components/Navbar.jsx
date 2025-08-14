@@ -26,14 +26,13 @@ export default function Navbar() {
     })
     const [ON, setON] = useState(false)
     return (
-        <div className='container-fluid p-0 py-3 navcn'>
-            <div className="row navrow text-white m-0 align-items-center justify-content-md-around justify-content-between ">
-                <div className="col-auto p-0 m-0 mx-md-0 ms-5">
-                    {/* <img src={logo} className="p-0 m-0" alt="" /> */}
-                    <h1 className='my-auto logo'>dineshyadav</h1>
+        <div className='container-fluid p-0 py-lg-3 py-md-2 py-sm-1 py-0 navcn  w-[90%]'>
+            <div className="flex flex-row navrow w-full  text-white m-0   place-content-between align-items-center ">
+                <div className="col-auto p-0 m-0 mx-md-0 md:ms-5 ms-0 " >
+                    <h1 className='my-auto logo' style={{ fontSize: "50px" }}>dineshyadav</h1>
                 </div>
-                <div className="col-lg-7 col-sm-9 bg m-0 d-sm-inline d-none ">
-                    <ul className='d-flex  flex-row    justify-content-between align-items-center p-0 m-0 '>
+                <div className="lg:w-3/5 md:w-8/12 w-full  bg  d-md-inline d-none md:m-0 -mt-4  as">
+                    <ul className='d-flex  flex-row  md:place-content-between place-content-between w-full align-items-center p-0 m-0 '>
                         <li className='d-inline pb-2 list-style-none p-0 home mt-2 slide'>
                             <a href='/' className='fs-6 text-decoration-none m-0' style={{ color: '#4E9CD5' }}>HOME</a>
                         </li>
@@ -44,8 +43,8 @@ export default function Navbar() {
                         <li className='d-inline  mt-2 pb-2 list-style-none p-0 slide'>
                             <a href='#skills' className='fs-6 text-decoration-none text-white  m-0' >SKILLS</a>
                         </li>
-                        <li className='d-inline experience mt-2 pb-2 list-style-none p-0 d-md-inline d-none slide' style={{ cursor: "not-allowed" }}>
-                            <a href='/' className='fs-6 text-decoration-none text-white  m-0' style={{ cursor: "not-allowed" }}   >EXPERIENCE</a>
+                        <li className='d-inline  mt-2 pb-2 list-style-none p-0 slide' >
+                            <a href='#experience' className='fs-6 text-decoration-none text-white  m-0'  >EXPERIENCE</a>
                         </li>
                         <li className='d-inline  list-style-none p-0 slide'>
                             <a href='#contact' className='py-md-2 py-1 px-md-4 px-2 fs-6 rounded-1 text-decoration-none contact text-white'>CONTACT</a>
@@ -53,7 +52,7 @@ export default function Navbar() {
                     </ul>
                 </div>
 
-                <div className="col-sm-2 col-3 text-end pe-3  d-sm-none d-inline p-0 fs-3 menubar position-relative mx-md-0 mx-sm-3 mx-4 ">
+                <div className="col-sm-2 col-3 text-end pe-3  d-md-none d-inline p-0 fs-3 menubar position-relative mx-md-0 mx-sm-3 mx-4 ">
                     <button className='m-0 p-0 w-auto  text-white bg bg-transparent' onClick={() => setON(!ON)}>|||</button>
                     <div className={ON ? "bar position-absolute text-start opacity-100 show " : "bar position-absolute   text-start hidden "}>
                         <ul className='px-3'>
@@ -68,7 +67,7 @@ export default function Navbar() {
                                 <a href='#skills' className='fs-6 text-decoration-none text-white  m-0' >SKILLS</a>
                             </li>
                             <li className=' list-style-none p-0'>
-                                <a href='/' className='fs-6 text-decoration-none text-white  m-0' >EXPERIENCE</a>
+                                <a href='#experience' className='fs-6 text-decoration-none text-white  m-0' >EXPERIENCE</a>
                             </li>
                             <li className=' list-style-none p-0'>
                                 <a href='#contact' className='fs-6 rounded-1 text-decoration-none text-white'>CONTACT</a>
