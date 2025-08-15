@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useRef } from 'react';
 import abs from '../photos/bg4.jpg'
-import photo2 from '../photos/myfoto6.png'
+import photo2 from '../photos/PhotoMh.jpg'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';

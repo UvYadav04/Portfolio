@@ -73,7 +73,7 @@ export default function Contact() {
     // }, [])
     return (
         <>
-            <div className='conpage container-fluid p-0'>
+            <div className='conpage container-fluid p-0 '>
                 <div className="row conrow mb-3 justify-content-around position-relative px-md-4 px-1 pt-md-4 pt-0 pb-2 mx-md-5 mx-sm-3 mx-2 " id='contact'>
                     <div className="col-md-5 col-sm-10 col-11 p-0 concol d-md-inline d-none">
                         <h1 className='text-black text-md-start text-center mt-md-4 mt-sm-1 mt-0 fs-sm-1 fs-2 d-sm-block d-none'>Have a project? Let's talk</h1>

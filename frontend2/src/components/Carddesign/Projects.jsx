@@ -36,8 +36,8 @@ const ProjectsCard = () => {
     const [hide, sethide] = useState(1)
     const [demovideo, setdemo] = useState(null)
     return (
-        <div className="container2 p-0">
-            <h1 className="text-2xl underline">Tech Projects</h1>
+        <div className="container2 p-0" id="projects">
+            {/* <h1 className="text-2xl underline w-full text-white mx-auto">Tech Projects</h1> */}
             {Projects.map((card, index) => (
                 <Card
                     key={index}

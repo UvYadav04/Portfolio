@@ -61,7 +61,9 @@ export default function Home() {
                 <ProjectsCard />
                 <Contact />
                 <img src={abs} className='abs position-absolute md:-top-0 -top-14 w-100 d-sm-inline d-none  ' alt="" />
-                <img src={abs2} className='abs2 position-absolute top-0  d-sm-none d-inline opacity-20 ' alt="" />
+                <div className="img-wrapper position-absolute top-0 left-0 d-sm-none d-inline">
+                    <img src={abs2} className="w-100 h-auto" alt="" />
+                </div>
             </div>
 
             <div className={loading ? "loader position-absolute top-0 loader text-center" : "d-none"}>

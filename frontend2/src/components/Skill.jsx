@@ -54,8 +54,8 @@ export default function Skill() {
             })
     })
     return (
-        <div className='skillpage container py-4 mt-4 px-1'>
-            <h1 className='text-white mb-4 px-md-5 px-0 text-2xl underline' >Tech Skills</h1>
+        <div className='skillpage container py-4 mt-4 px-3 '>
+            {/* <h1 className='text-white mb-4 px-md-5 px-0 text-2xl underline mx-auto' >Tech Skills</h1> */}
             <div className="row mx-0  skillrow  flex-columns justify-content-md-start justify-content-between align-items-start px-md-0 px-sm-2 px-0" id='skills'>
                 {
                     data.map((item) => {
