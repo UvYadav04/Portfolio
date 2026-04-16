@@ -4,31 +4,37 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 const data = [
-    { name: "Next.js", height: 90 },
-    { name: "React", height: 95 },
-    { name: "Redux", height: 85 },
-    { name: "Zustand", height: 80 },
-    { name: "JavaScript", height: 92 },
-    { name: "TypeScript", height: 88 },
-    { name: "C", height: 70 },
-    { name: "C++", height: 72 },
-    { name: "Python", height: 75 },
-    { name: "Node.js", height: 90 },
-    { name: "Express.js", height: 88 },
-    { name: "MongoDB", height: 90 },
-    { name: "PostgreSQL", height: 80 },
-    { name: "MySQL", height: 78 },
-    { name: "Prisma", height: 80 },
-    { name: "Mongoose", height: 82 },
-    { name: "Tailwind CSS", height: 85 },
-    { name: "Docker", height: 78 },
-    { name: "Git/GitHub", height: 85 },
-    { name: "Nginx", height: 75 },
-    { name: "Software Architecture", height: 82 },
-    { name: "System Design", height: 80 },
-    { name: "Design Patterns", height: 80 }
-];
+    // 🔥 GenAI / AI (Primary Focus)
+    { name: "LLMs", height: 92 },
+    { name: "RAG", height: 92 },
+    { name: "LangGraph", height: 90 },
+    { name: "LangChain", height: 88 },
+    { name: "Agentic AI", height: 90 },
+    { name: "Prompt Engineering", height: 88 },
+    { name: "LoRA / QLoRA", height: 84 },
+    { name: "Vector Databases", height: 88 },
+    { name: "Qdrant", height: 88 },
 
+    // 🧠 Deep Learning
+    { name: "Transformers", height: 86 },
+    { name: "BERT / GPT", height: 85 },
+    { name: "Attention Mechanism", height: 84 },
+    { name: "Neural Networks", height: 82 },
+    { name: "CNN / U-Net", height: 80 },
+
+    // 💻 Development (Strong + Relevant)
+    { name: "React", height: 95 },
+    { name: "Next.js", height: 90 },
+    { name: "TypeScript", height: 90 },
+    { name: "JavaScript", height: 92 },
+    { name: "FastAPI", height: 90 },
+    { name: "Node.js", height: 88 },
+    { name: "REST APIs", height: 90 },
+    { name: "MongoDB", height: 88 },
+    { name: "Redis", height: 85 },
+    { name: "Docker", height: 80 },
+    { name: "AWS", height: 82 }
+];
 
 
 export default function Skill() {
