@@ -5,9 +5,20 @@ import { Link } from "react-router-dom";
 import { ImCancelCircle } from "react-icons/im";
 const Card = ({ code, name, image, text, techstack, link, git, demo, setdemo, description1, description2, hide }) => {
 
-    const getImage = (image) => {
-        return require(`../../photos/logos/${image}.png`)
-    }
+const images = require.context('../../photos/logos', false, /\.png$/);
+
+const getImage = (name) => {
+  try {
+    return images(`./${name}.png`);
+  } catch (e) {
+    console.error(`Image not found: ${name}`);
+    return null;
+  }
+};
+    // const getImage = (image) => {
+    //     console.log(image)
+    //     return require(`../../photos/logos/${image}.png`)
+    // }
     const getVideo = (video) => {
         return require(`../../videos/${video}.mp4`)
     }

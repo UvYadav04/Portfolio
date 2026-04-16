@@ -16,29 +16,28 @@ export default function Myself() {
                     <h2 className='m-0 fs-sm-2 fs-2'>About me</h2>
                     {/* XL screens */}
                     <p className="d-none d-xxl-block text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
-                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with deep expertise in MongoDB, Express.js, React, and Node.js. I build scalable, high-performance applications by leveraging my strong understanding of algorithms and data structures, ensuring efficient and optimized solutions across the stack. I have solid system design knowledge, enabling me to create robust architectures and end-to-end solutions for complex projects. My work emphasizes clean, maintainable code, seamless API integrations, and applying modern design patterns to deliver reliable and user-friendly applications. I enjoy tackling challenging problems, improving performance, and ensuring applications are both secure and highly available, making a measurable impact for
-
+                        {`Hey there! I'm a Full-Stack AI Developer specializing in building intelligent systems using LLMs, RAG pipelines, LangChain, LangGraph, and agent-based architectures with vector databases. I develop scalable, high-performance applications by combining strong backend engineering with modern frontend frameworks. With a solid foundation in data structures, algorithms, and system design, I focus on building efficient, reliable, and well-architected systems. My work emphasizes clean, maintainable code, optimized data flows, and seamless integration of AI capabilities into real-world applications.`}
                     </p>
+
                     <p className="d-xxl-none d-none d-xl-block text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
-                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with deep expertise in MongoDB, Express.js, React, and Node.js. I build scalable, high-performance applications by leveraging my strong understanding of algorithms and data structures, ensuring efficient and optimized solutions across the stack. I have solid system design knowledge, enabling me to create robust architectures and end-to-end solutions for complex projects.
-                        My work emphasizes clean, maintainable code, seamless
+                        {`Hey there! I'm a Full-Stack AI Developer working with LLMs, RAG, LangChain, LangGraph, and vector databases to build intelligent systems. I develop scalable applications using React, TypeScript, Node.js, and FastAPI, with a strong focus on system design, efficient architectures, and clean code.`}
                     </p>
 
                     <p className="d-none d-lg-block d-xl-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
-                        Hi! I'm a MERN full-stack developer with strong expertise in MongoDB, Express.js, React, and Node.js. I build scalable applications by applying solid knowledge of data structures, algorithms, and system design principles. I focus on creating reliable backends, clean frontend interfaces, and seamless API integrations. My approach emphasizes maintainable code, efficient performance,
+                        {`Hi! I'm a Full-Stack AI Developer experienced in building applications using LLMs, RAG pipelines, and modern web technologies. I focus on scalable backend systems, clean frontend interfaces, and efficient system design to create reliable and maintainable solutions.`}
                     </p>
+
                     <p className="d-md-block d-lg-none d-none text-base break-all text-slate-400" style={{ lineHeight: "20px" }}>
-                        Hey there! I'm a full-stack software developer specializing in the MERN stack, with extensive experience in MongoDB, Express.js, React, and Node.js. I design and implement scalable, high-performance applications, leveraging my deep understanding of algorithms and data structures to optimize efficiency across the entire stack. My expertise in system design allows me to create robust architectures and end-to-end solutions tailored for real-world projects. I excel at API integration, clean and maintainable coding practices, and applying modern design patterns to ensure reliability, maintainability, and optimal user experiences. I am passionate about building impactful software, continuously learning new technologies, and delivering solutions that scale seamlessly.
+                        {`Hey! I'm a Full-Stack AI Developer building scalable applications and AI-powered systems using LLMs, RAG, and modern web technologies. I focus on clean architecture, efficient performance, and real-world problem solving.`}
                     </p>
 
                     <p className="d-none d-sm-block d-md-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
-                        I'm a full-stack MERN developer with solid skills in MongoDB, Express.js, React, and Node.js. I build scalable and efficient applications, using my knowledge of data structures, algorithms, and system design to create robust and maintainable solutions. I focus on clean code, API integration, and applying modern design patterns to deliver reliable projects. Passionate about learning new technologies and solving real-world problems with full-stack development.
+                        {`Full-Stack AI Developer working with LLMs, RAG, and modern web stacks to build scalable and efficient applications with clean architecture.`}
                     </p>
+
                     <p className="d-sm-none d-lg-none d-xl-none text-base break-all text-slate-400" style={{ lineHeight: "19px" }}>
-                        Skilled full-stack MERN developer with experience in MongoDB, Express.js, React, and Node.js. I build efficient and maintainable applications, leveraging DSA knowledge and system design principles. Focused on clean code, API integration, and practical solutions for real-world problems in full-stack development.
+                        {`Full-Stack AI Developer building scalable apps and AI systems using LLMs and modern technologies.`}
                     </p>
-
-
 
                     <hr />
 

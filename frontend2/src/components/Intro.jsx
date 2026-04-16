@@ -87,18 +87,24 @@ export default function Intro() {
                     <div className=" col-lg-6 col-sm-6 col-8 m-0 pe-0  lg:p-10 md:p-6 ">
                         <h3 className='slide1 my-0 fs-lg-3 fs-4 '>Hello , I'm</h3>
                         <h1 className='slide1 mb-lg-4 mt-lg-4  mb-md-3 mt-md-3 mb-sm-2  mt-sm-2 text-sm' > Dinesh Yadav</h1>
-                        <h4 className='slide1 fs-lg-4 fs-sm-5 fs-6 d-sm-none d-block  ps-1 m-0'>Full stack Software Developer</h4>
+                        <h4 className='slide1 fs-lg-4 fs-sm-5 fs-6 d-sm-none d-block ps-1 m-0'>
+                            Full-Stack AI Developer
+                        </h4>
 
+                        <p className="d-md-none d-sm-block d-none aboutsm mt-md-3 mt-1 text-sm" style={{ lineHeight: "16px" }}>
+                            {`Full-Stack AI Developer working with LLMs, RAG, LangChain, and LangGraph to build intelligent systems, along with scalable web applications using React, Node.js, and FastAPI.`}
+                        </p>
 
-                        <p className="d-md-none  d-sm-block d-none aboutsm mt-md-3 mt-1 text-sm" style={{ lineHeight: "16px" }}>```Full stack software developer proficient in React, Node.js, Express, MongoDB, creating efficient web solutions.```</p>
                         <p className='mt-lg-2 mt-md-1 mt-0 p-0 d-md-block d-none slide1' style={{ lineHeight: "19px" }}>
-                            ```Full-Stack Software Developer skilled in building robust web applications using MongoDB, Express.js, React, and Node.js, with a strong focus on scalable backends, dynamic frontends, and clean architecture. <span className='d-xl-inline d-none'> Experienced in designing efficient algorithms, optimizing data structures, and implementing complex features, while leveraging modern frameworks and responsive design principles for seamless</span>```
+                            {`Full-Stack AI Developer specializing in building intelligent systems using LLMs, RAG pipelines, LangChain, LangGraph, and agent-based architectures with vector databases. Experienced in developing end-to-end applications using React, TypeScript, Node.js, and FastAPI, with a strong focus on scalable backends and clean system design.`}
+
+                            <span className='d-xl-inline d-none'>
+                                {`Skilled in designing efficient data flows, retrieval systems, and real-time applications that combine AI capabilities with robust full-stack engineering.`}
+                            </span>
                         </p>
                         <ul className='p-0 text-start text-white m-0 conlist '>
                             <li className='list-style-none  m-0 ms-0 p-0'><Link to={"https://www.linkedin.com/in/dinesh-yadav-264113265/"} className='text-decoration-none text-white '><LinkedInIcon className='p-1' sx={{ fontSize: 32, }} /></Link></li>
-                            <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.instagram.com/mr.oggiii?igsh=MXNieXpmMDBrZXJzcQ=="} className='text-decoration-none text-white '><InstagramIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
-                            <li className='list-style-none  m-0 ms-0 ' ><Link to={"https://x.com/dineshnirban04?t=hZTTivl1xtnSlB8dvyHlPw&s=09"} className='text-decoration-none text-white '><XIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
-                            <li className='list-style-none  m-0 ms-0 '><Link to={"https://www.reddit.com/u/uvyadav_04/s/O3mcaRamyH"} className='text-decoration-none text-white '><RedditIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
+
                             <li className='list-style-none  m-0 ms-0 '><Link to={"https://github.com/UvYadav04"} className='text-decoration-none text-white '><GitHubIcon className='p-1' sx={{ fontSize: 32 }} /></Link></li>
                         </ul>
                         <div className="buttoonnss flex flex-row gap-2 mt-2 place-content-start place-items-center">
